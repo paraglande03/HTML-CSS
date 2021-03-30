@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Codepen - Demo Flexbox</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+        
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+        
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        
+        .SideBarLeftItem {
+            background: gold;
+        }
+        
+        .SideBarRightItem {
+            background: hotpink;
+        }
+        
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0 px solid green;
+        }
+        
+        .mainContentItem {
+            flex: 3 0px;
+        }
+        
+        .SideBarLeftItem {
+            order: 1;
+        }
+        
+        .mainContentItem {
+            order: 2;
+        }
+        
+        .SideBarRightItem {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>Header - sample flexbox example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First Article </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates consequatur eum ratione accusamus, nam aut ipsam vero quibusdam facere optio sint quasi quos nisi! Necessitatibus odit sit vel autem.</p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, veniam ipsam totam ratione qui odit, modi vel soluta rerum obcaecati voluptatum quidem non, alias dolorem explicabo amet ullam dolorum architecto!<br>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Earum illo distinctio ullam explicabo at molestiae? Voluptatum dolor quod quo voluptatibus consectetur, consequatur quisquam praesentium, aliquam iure tempora incidunt odit ipsum?</p>
+            </article>
+            <article>
+                <h2>Third Article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur necessitatibus odio eum consectetur deleniti modi accusamus autem, ratione vitae quidem ullam dignissimos, ex repudiandae corrupti facere explicabo aut recusandae?<br>Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab minus repellat nam, veritatis, sit dignissimos et similique placeat, cum harum autem cumque eaque accusamus. Labore vitae earum quis corrupti.<br>Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Temporibus enim fuga voluptas, expedita veritatis quaerat quibusdam, quisquam delectus excepturi eos numquam nemo dicta? Consequuntur nam voluptate voluptatem ut tempora quasi?</p>
+            </article>
+
+        </section>
+        <sidebar class="sideBarItem SideBarLeftItem">
+            <div class="centre">
+                <p>Left side bar</p>
+            </div>
+        </sidebar>
+        <sidebar class="sideBarItem SideBarRightItem">
+            <div class="centre">
+                <p>Right Side bar</p>
+            </div>
+        </sidebar>
+    </div>
+
+    <footer class="footerContainer">
+        <h1>This is footer</h1>
+
+    </footer>
+</body>
+
+
+
+
+
+
+
+</html>
